@@ -32,6 +32,11 @@
         app:itemTextColor="@color/nav_btn_color"
         app:itemRippleColor="@color/nav_btn_color"
         app:itemIconTint="@color/nav_btn_color"
+<<<<<<< HEAD
+=======
+        app:itemBackground="@null"
+        app:itemActiveIndicatorStyle="@null"
+>>>>>>> 4e0fe77 (Initial commit)
         />
 
 

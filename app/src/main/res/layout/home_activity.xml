@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_background">
+
+    <TextView
+        android:id="@+id/islamiTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="إسلامي"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:layout_marginTop="5dp"
+        />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/Taupe"
+        app:menu="@menu/nav_bar_btns"
+        app:itemIconSize="50dp"
+        app:itemTextColor="@color/nav_btn_color"
+        app:itemRippleColor="@color/nav_btn_color"
+        app:itemIconTint="@color/nav_btn_color"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/Fragment_Container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/islamiTv"
+        app:layout_constraintBottom_toTopOf="@id/nav_btns"
+
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
